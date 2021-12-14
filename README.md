@@ -22,6 +22,6 @@ npm run server
 te runnen in de terminal. Je ziet dan een bericht in de terminal staan op welke link de app te zien is.
 
 
-## Licence
+## Licence 👨🏻‍⚖️
 Dit project is voorzien van een MIT licence. Zie de pagina LICENCE voor meer informatie.
 

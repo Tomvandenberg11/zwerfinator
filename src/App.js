@@ -1,29 +1,20 @@
-import React, { useRef, useEffect, useState } from "react"
-import mapboxgl from "!mapbox-gl" // eslint-disable-line import/no-webpack-loader-syntax
+import React from "react"
+import {Parallax} from "react-scroll-parallax";
+import {ReactComponent as DirkIcon} from "./assets/images/Dirk.svg";
+import Clouds from "./assets/images/Lucht.svg";
+import {Subtitle, Title} from "./components/StyledComponents";
 
-mapboxgl.accessToken =
-  "pk.eyJ1IjoidG9tdmRiMTEiLCJhIjoiY2t4ZWlqZGZxMG84ZTJzbjR1OXF3ZDIzdSJ9.IuJfOfjVQC6gG0oaNBbX_w"
 
 const App = () => {
-  const mapContainer = useRef(null)
-  const map = useRef(null)
-  const [lng, setLng] = useState(4.96)
-  const [lat, setLat] = useState(52.51)
-  const [zoom, setZoom] = useState(12)
-
-  useEffect(() => {
-    if (map.current) return // initialize map only once
-    map.current = new mapboxgl.Map({
-      container: mapContainer.current,
-      style: "mapbox://styles/mapbox/outdoors-v11",
-      center: [lng, lat],
-      zoom: zoom,
-    })
-  })
+  // const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches
 
   return (
-    <div>
-      <div ref={mapContainer} className="map-container" />
+    <div className="App" style={{backgroundImage: `url(${Clouds})`, backgroundSize: '100%'}}>
+      <div style={{width: 250, margin: 'auto'}}>
+        <Title>Zwerfinator</Title>
+        <Subtitle>Dirk Groot</Subtitle>
+      </div>
+      <DirkIcon width={400} style={{position: 'absolute', bottom: 0, left: 300, zIndex: 1}}/>
     </div>
   )
 }

@@ -7,7 +7,7 @@ Dit is het project voor de Zwerfinator.
 
 Om de app lokaal te laten draaien moet het project eerst lokaal worden gecloned. Als dit stukje code gerunt wordt in de terminal wordt de repository lokaal gecloned:
 
-`gh repo clone tomvandenberg11/frontend-applications.git`
+`gh repo clone tomvandenberg11/zwerfinator.git`
 
 Ga eerst naar de folder waarin je wilt dat het project gecloned wordt. Je kan in de terminal navigeren met cd met daar achter de map waar je heen wilt.
 

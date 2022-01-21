@@ -4,12 +4,15 @@ import "mapbox-gl/dist/mapbox-gl.css"
 import "./assets/style/index.css"
 import App from "./App"
 import {ParallaxProvider} from "react-scroll-parallax";
+import {BrowserRouter} from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ParallaxProvider>
-      <App />
-    </ParallaxProvider>
+    <BrowserRouter>
+      <ParallaxProvider>
+        <App />
+      </ParallaxProvider>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 )

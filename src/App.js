@@ -1,21 +1,19 @@
 import React from "react"
-import {Parallax} from "react-scroll-parallax";
-import {ReactComponent as DirkIcon} from "./assets/images/Dirk.svg";
-import Clouds from "./assets/images/Lucht.svg";
-import {Subtitle, Title} from "./components/StyledComponents";
+import { Route, Routes} from "react-router-dom";
+import About from "./components/pages/About";
+import Home from "./components/pages/Home";
+import Research from "./components/pages/Research";
 
 
 const App = () => {
   // const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches
 
   return (
-    <div className="App" style={{backgroundImage: `url(${Clouds})`, backgroundSize: '100%'}}>
-      <div style={{width: 250, margin: 'auto'}}>
-        <Title>Zwerfinator</Title>
-        <Subtitle>Dirk Groot</Subtitle>
-      </div>
-      <DirkIcon width={400} style={{position: 'absolute', bottom: 0, left: 300, zIndex: 1}}/>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path="/about" element={<About/>} />
+      <Route path="/research" element={<Research/>}/>
+    </Routes>
   )
 }
 

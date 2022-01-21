@@ -1,6 +1,6 @@
 import Clouds from "../../assets/images/lucht.svg";
 import {Subtitle, Title, Underline} from "../StyledComponents";
-import {Link, Route, Routes} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {ReactComponent as DirkIcon} from "../../assets/images/dirk.svg";
 import {Skyline} from "../visuals/skyline";
 

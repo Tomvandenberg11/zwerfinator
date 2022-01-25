@@ -43,3 +43,30 @@
   border-radius: 50%;
   background-color: #333;
 }
+
+.hover {
+  position: relative;
+}
+
+.hover:hover .invisible {
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+
+.hover:hover .visible {
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.visible {
+  transition: opacity .3s ease-in-out;
+  position: absolute;
+  top: 50px;
+}
+
+.invisible {
+  position: absolute;
+  top: 50px;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}

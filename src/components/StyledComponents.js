@@ -16,9 +16,9 @@ export const Subtitle = styled.h5`
 
 export const Text = styled.p`
   font-family: 'Kumbh Sans', sans-serif;
-  font-size: 20px;
-  letter-spacing: 1px;
-  z-index: 1;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 40px;
 `
 
 export const Underline = styled.div`

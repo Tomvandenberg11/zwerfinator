@@ -3,16 +3,17 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "disable-scroll": "^0.6.0",
         "dotenv": "^10.0.0",
+        "framer-motion": "^4.1.17",
         "mapbox-gl": "^2.6.1",
         "react": "^17.0.2",
+        "react-countup": "^6.1.1",
         "react-dom": "^17.0.2",
         "react-map-gl": "^6.1.18",
         "react-router-dom": "^6.2.1",
         "react-scripts": "^4.0.3",
-        "react-scroll-horizontal": "^1.6.6",
         "react-scroll-parallax": "^2.4.3",
+        "react-visibility-sensor": "^5.1.1",
         "styled-components": "^5.3.3"
     },
     "scripts": {
@@ -29,5 +30,8 @@
         "not ie 11"
     ],
     "author": "Tom van den Berg",
-    "license": "MIT"
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/plugin-syntax-jsx": "^7.16.7"
+    }
 }

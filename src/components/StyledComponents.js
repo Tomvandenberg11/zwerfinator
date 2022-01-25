@@ -2,15 +2,15 @@ import styled from "styled-components";
 
 export const Title = styled.h2`
   font-family: 'Kumbh Sans', sans-serif;
-  font-size: 48px;
-  margin-top: 20px;
+  font-size: 15em;
   z-index: 1;
-  font-weight: 800;
+  font-weight: 900;
 `
 
 export const Subtitle = styled.h5`
   font-family: 'Kumbh Sans', sans-serif;
-  font-size: 28px;
+  font-size: 10em;
+  font-weight: 900;
   z-index: 1;
 `
 

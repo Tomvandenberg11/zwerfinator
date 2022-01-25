@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import ReactMapGL from "react-map-gl"
 import MapMarker from "./MapMarker"
+import * as Trash from './../../assets/data.json'
 
 const Map = () => {
   const [viewport, setViewport] = useState({
@@ -8,7 +9,7 @@ const Map = () => {
     longitude: 4.96442,
     width: "60vw",
     height: "60vh",
-    zoom: 6,
+    zoom: 11,
   })
 
   return (
@@ -21,20 +22,18 @@ const Map = () => {
           setViewport(viewport)
         }}
       >
-        <MapMarker
-          key={1}
-          lat={52.485769}
-          long={4.950773}
-          title="McDonalds"
-          subtitle="Dit is de McDonalds van Purmerend"
-        />
-        <MapMarker
-          key={2}
-          lat={52.51487350463867}
-          long={4.958380699157715}
-          title="Overwhere Zuid"
-          subtitle="Dit is de wijk Overwhere Zuid"
-        />
+        {Trash.Data.map((item, index) => {
+          let marker
+          if (item.Soort === 'Plastic flesje' && item.Stad === 'Purmerend') {
+            marker = <MapMarker
+                        key={index}
+                        lat={parseFloat(item.Latitude)}
+                        long={parseFloat(item.Longitude)}
+                      />
+          }
+          return marker
+        })}
+
       </ReactMapGL>
     </div>
   )

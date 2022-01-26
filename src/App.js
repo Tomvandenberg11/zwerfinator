@@ -8,6 +8,8 @@ import {Parallax} from "react-scroll-parallax";
 import {ReactComponent as Quote} from "./assets/images/quotationMark.svg";
 import {ReactComponent as Bottles} from "./assets/images/bottles.svg";
 import {ReactComponent as Cans} from "./assets/images/cans.svg";
+import {ReactComponent as AllPackages} from "./assets/images/allPackages.svg";
+
 import {ReactComponent as GRAPH1} from "./assets/images/graphs/graph1.svg";
 import {ReactComponent as GRAPH2_1} from "./assets/images/graphs/graph2_1.svg";
 import {ReactComponent as GRAPH2_2} from "./assets/images/graphs/graph2_2.svg";
@@ -27,14 +29,12 @@ const App = () => {
     <div className="App" style={{backgroundColor: 'whitesmoke'}}>
       <div className="container">
         <div className="text-wrapper">
-          <FadeText>
-              <div>
-                <Parallax x={[-143, 100]}>
-                  <Title style={{color: '#00ACE7'}}>Dirk Groot</Title>
-                </Parallax>
-                <Subtitle>Zwerfinator</Subtitle>
-              </div>
-          </FadeText>
+            <div>
+              <Parallax x={[-143, 100]}>
+                <Title style={{color: '#00ACE7'}}>Dirk Groot</Title>
+              </Parallax>
+              <Subtitle>Zwerfinator</Subtitle>
+            </div>
         </div>
       </div>
 
@@ -184,7 +184,7 @@ const App = () => {
         <div className="text-wrapper">
           <div>
             <Text>Aantal opgeraapte flesjes per jaar, per kilometer</Text>
-            <GRAPH1/>
+            <GRAPH1 width={'90%'}/>
           </div>
         </div>
       </div>
@@ -193,11 +193,11 @@ const App = () => {
         <div className="text-wrapper hover">
           <div className="visible">
             <Text>We zien enorme afname van het aantal plastic flesjes van 2020 naar 2021</Text>
-            <GRAPH2_1 width={'80%'}/>
+            <GRAPH2_1 width={'70%'}/>
           </div>
           <div className="invisible">
             <Text>Dat zien we nog duidelijker bij de verhoudingen</Text>
-            <GRAPH2_2 width={'80%'}/>
+            <GRAPH2_2 width={'70%'}/>
           </div>
         </div>
       </div>
@@ -247,6 +247,15 @@ const App = () => {
             <Text>De verhouding van blikjes per kilometer neemt zelfs een beetje toe</Text>
             <GRAPH5_2 width={'80%'}/>
           </div>
+        </div>
+      </div>
+
+      <div className="container">
+        <div className="text-wrapper">
+          <Subtitle style={{textDecoration: 'underline', fontSize: '8em', marginBottom: 50}}>Alle drankverpakkingen</Subtitle>
+          <Parallax x={[-100, 0]}>
+            <AllPackages width={8000} height={200} />
+          </Parallax>
         </div>
       </div>
 

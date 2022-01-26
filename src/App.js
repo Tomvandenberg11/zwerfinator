@@ -7,9 +7,16 @@ import {Parallax} from "react-scroll-parallax";
 
 import {ReactComponent as Quote} from "./assets/images/quotationMark.svg";
 import {ReactComponent as Bottles} from "./assets/images/bottles.svg";
+import {ReactComponent as Cans} from "./assets/images/cans.svg";
 import {ReactComponent as GRAPH1} from "./assets/images/graphs/graph1.svg";
 import {ReactComponent as GRAPH2_1} from "./assets/images/graphs/graph2_1.svg";
 import {ReactComponent as GRAPH2_2} from "./assets/images/graphs/graph2_2.svg";
+import {ReactComponent as GRAPH3_1} from "./assets/images/graphs/graph3_1.svg";
+import {ReactComponent as GRAPH3_2} from "./assets/images/graphs/graph3_2.svg";
+import {ReactComponent as GRAPH4_1} from "./assets/images/graphs/graph4_1.svg";
+import {ReactComponent as GRAPH4_2} from "./assets/images/graphs/graph4_2.svg";
+import {ReactComponent as GRAPH5_1} from "./assets/images/graphs/graph5_1.svg";
+import {ReactComponent as GRAPH5_2} from "./assets/images/graphs/graph5_2.svg";
 
 const App = () => {
   // const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches
@@ -43,7 +50,6 @@ const App = () => {
           </FadeText>
         </div>
       </div>
-
 
       <div className="container">
         <div className="text-wrapper">
@@ -192,6 +198,54 @@ const App = () => {
           <div className="invisible">
             <Text>Dat zien we nog duidelijker bij de verhoudingen</Text>
             <GRAPH2_2 width={'80%'}/>
+          </div>
+        </div>
+      </div>
+
+      <div className="container" style={{alignItems: 'flex-start', backgroundColor: 'lightgray'}}>
+        <div className="text-wrapper hover">
+          <div className="visible">
+            <Text>Als we naar de verhoudingen kijken per half jaar</Text>
+            <GRAPH3_1 width={'100%'}/>
+          </div>
+          <div className="invisible">
+            <Text>Zien we dat statiegeld z'n werk doet</Text>
+            <GRAPH3_2 width={'100%'}/>
+          </div>
+        </div>
+      </div>
+
+      <div className="container">
+        <div className="text-wrapper">
+          <Subtitle style={{textDecoration: 'underline'}}>Blikjes</Subtitle>
+          <Parallax x={[-100, 0]}>
+            <Cans width={8000} height={200} />
+          </Parallax>
+        </div>
+      </div>
+
+      <div className="container" style={{alignItems: 'flex-start', backgroundColor: 'lightgray'}}>
+        <div className="text-wrapper hover">
+          <div className="visible">
+            <Text>Het aantal opgeraapte blikjes per jaar verschilt soms enorm. Het neemt ook steeds toe. Wat slecht is... </Text>
+            <GRAPH4_1 width={'100%'}/>
+          </div>
+          <div className="invisible">
+            <Text>Het aantal opgeraapte blikjes per jaar verschilt soms enorm. Het neemt ook steeds toe. Wat slecht is... </Text>
+            <GRAPH4_2 width={'100%'}/>
+          </div>
+        </div>
+      </div>
+
+      <div className="container" style={{alignItems: 'flex-start'}}>
+        <div className="text-wrapper hover">
+          <div className="visible">
+            <Text>In het vierde kwartaal van 2020 en 2021 zijn er veel meer blikjes opgeraapt</Text>
+            <GRAPH5_1 width={'80%'}/>
+          </div>
+          <div className="invisible">
+            <Text>De verhouding van blikjes per kilometer neemt zelfs een beetje toe</Text>
+            <GRAPH5_2 width={'80%'}/>
           </div>
         </div>
       </div>

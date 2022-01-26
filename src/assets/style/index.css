@@ -61,12 +61,12 @@
 .visible {
   transition: opacity .3s ease-in-out;
   position: absolute;
-  top: 50px;
+  top: 100px;
 }
 
 .invisible {
   position: absolute;
-  top: 50px;
+  top: 100px;
   opacity: 0;
   transition: opacity .3s ease-in-out;
 }

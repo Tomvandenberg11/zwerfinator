@@ -9,6 +9,7 @@ import {ReactComponent as Quote} from "./assets/images/quotationMark.svg";
 import {ReactComponent as Bottles} from "./assets/images/bottles.svg";
 import {ReactComponent as Cans} from "./assets/images/cans.svg";
 import {ReactComponent as AllPackages} from "./assets/images/allPackages.svg";
+import Hover from "./assets/images/hover.png";
 
 import {ReactComponent as DirkIcon} from "./assets/images/dirk.svg";
 import {ReactComponent as FacebookIcon} from "./assets/images/socials/facebook.svg";
@@ -205,6 +206,7 @@ const App = () => {
 
           <div className="container" style={{alignItems: 'flex-start', backgroundColor: '#FAFAFA'}}>
             <div className="text-wrapper hover">
+              <img alt="Hover icon" src={Hover} width={50} height={50} style={{position: 'absolute', right: 0, top: 200}}/>
               <div className="visible">
                 <Text>We zien enorme afname van het aantal plastic flesjes van 2020 naar 2021</Text>
                 <GRAPH2_1 width={'70%'}/>
@@ -218,6 +220,7 @@ const App = () => {
 
           <div className="container" style={{alignItems: 'flex-start'}}>
             <div className="text-wrapper hover">
+              <img alt="Hover icon" src={Hover} width={50} height={50} style={{position: 'absolute', right: 0, top: 200}}/>
               <div className="visible">
                 <Text>Als we naar de verhoudingen kijken per half jaar</Text>
                 <GRAPH3_1 width={'100%'}/>
@@ -241,6 +244,7 @@ const App = () => {
 
           <div className="container" style={{alignItems: 'flex-start'}}>
             <div className="text-wrapper hover">
+              <img alt="Hover icon" src={Hover} width={50} height={50} style={{position: 'absolute', right: 0, top: 200}}/>
               <div className="visible">
                 <Text>Het aantal opgeraapte blikjes per jaar verschilt soms enorm. Het neemt ook steeds toe. Wat slecht is... </Text>
                 <GRAPH4_1 width={'100%'}/>
@@ -254,12 +258,13 @@ const App = () => {
 
           <div className="container" style={{alignItems: 'flex-start', backgroundColor: '#FAFAFA'}}>
             <div className="text-wrapper hover">
+              <img alt="Hover icon" src={Hover} width={50} height={50} style={{position: 'absolute', right: 0, top: 200}}/>
               <div className="visible">
-                <Text>In het vierde kwartaal van 2020 en 2021 zijn er veel meer blikjes opgeraapt</Text>
+                <Text>In de laatste twee jaar zijn gevonden blikjes flink toegenomen</Text>
                 <GRAPH5_1 width={'80%'}/>
               </div>
               <div className="invisible">
-                <Text>De verhouding van blikjes per kilometer neemt zelfs een beetje toe</Text>
+                <Text>Maar de verhouding neemt lichtelijk toe</Text>
                 <GRAPH5_2 width={'80%'}/>
               </div>
             </div>
@@ -286,6 +291,7 @@ const App = () => {
 
           <div className="container" style={{alignItems: 'flex-start'}}>
             <div className="text-wrapper hover">
+              <img alt="Hover icon" src={Hover} width={50} height={50} style={{position: 'absolute', right: 0, top: 200}}/>
               <div className="visible" style={{display: 'flex', justifyContent: 'center'}}>
                 <GRAPH7_1 width={'80%'}/>
               </div>
@@ -297,6 +303,7 @@ const App = () => {
 
           <div className="container" style={{alignItems: 'flex-start', backgroundColor: '#FAFAFA'}}>
             <div className="text-wrapper hover">
+              <img alt="Hover icon" src={Hover} width={50} height={50} style={{position: 'absolute', right: 0, top: 200}}/>
               <div className="visible" style={{display: 'flex', alignItems: 'center', flexDirection: 'column', top: 50}}>
                 <Text style={{fontSize: '4em'}}>2021</Text>
                 <GRAPH8 width={'80%'}/>
@@ -320,9 +327,9 @@ const App = () => {
             <div className="text-wrapper" style={{paddingTop: 100}}>
               <DirkIcon style={{position: 'absolute', bottom: 0, zIndex: 1}}/>
               <div style={{marginTop: 500, zIndex: 3, position: 'relative'}}>
-                <Text style={{fontWeight: 400, marginBottom: 0}}>Ondek meer op<br/><a href="http://www.zwerfinator.nl" style={{color: '#000', fontWeight: '700'}}>Zwerfinator.nl</a></Text>
-                <FacebookIcon width={50} style={{marginRight: 50}}/>
-                <InstaIcon width={50}/>
+                <Text style={{fontWeight: 400, marginBottom: 0}}>Ondek meer op<br/><a href="http://www.zwerfinator.nl" target="_blank" rel="noreferrer" style={{color: '#000', fontWeight: '700'}}>Zwerfinator.nl</a></Text>
+                <a href="https://www.facebook.com/zwerfinator/" target="_blank" rel="noreferrer"><FacebookIcon width={50} style={{marginRight: 50}}/></a>
+                <a href="https://www.instagram.com/zwerfinator/" target="_blank" rel="noreferrer"><InstaIcon width={50}/></a>
 
                 <div style={{marginTop: 200}}>
                   <Text>Of neem contact op</Text>

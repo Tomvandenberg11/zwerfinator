@@ -3,7 +3,7 @@ import {useAnimation} from "framer-motion/dist/framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 
 const useOnScreen = (ref, rootMargin = "0px") => {
-  // State and setter for storing whether element is visible
+  // state and setter for storing whether element is visible
   const [isIntersecting, setIntersecting] = useState(false);
 
   useEffect(() => {

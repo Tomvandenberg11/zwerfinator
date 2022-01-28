@@ -5,18 +5,21 @@ import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import {Parallax} from "react-scroll-parallax";
 
+// importing images
 import {ReactComponent as Quote} from "./assets/images/quotationMark.svg";
 import {ReactComponent as Bottles} from "./assets/images/bottles.svg";
 import {ReactComponent as Cans} from "./assets/images/cans.svg";
 import {ReactComponent as AllPackages} from "./assets/images/allPackages.svg";
 import Hover from "./assets/images/hover.png";
 
+// importing icons
 import {ReactComponent as DirkIcon} from "./assets/images/dirk.svg";
 import {ReactComponent as FacebookIcon} from "./assets/images/socials/facebook.svg";
 import {ReactComponent as InstaIcon} from "./assets/images/socials/insta.svg";
 import {ReactComponent as MailIcon} from "./assets/images/socials/mail.svg";
 import {ReactComponent as PhoneIcon} from "./assets/images/socials/phone.svg";
 
+// importing graphs
 import {ReactComponent as GRAPH1} from "./assets/images/graphs/graph1.svg";
 import {ReactComponent as GRAPH2_1} from "./assets/images/graphs/graph2_1.svg";
 import {ReactComponent as GRAPH2_2} from "./assets/images/graphs/graph2_2.svg";
@@ -33,9 +36,11 @@ import {ReactComponent as GRAPH8} from "./assets/images/graphs/graph8.svg";
 import {ReactComponent as GRAPH8_2} from "./assets/images/graphs/graph8_2.svg";
 
 const App = () => {
+  // decide if screen is desktop
   const isMobile = window.matchMedia("only screen and (max-width: 1350px)").matches
 
   return (
+    // showing other content when screen is not desktop
     isMobile ?
       <div style={{width: '100vw', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
         <Text>Sorry, currently only for screens > 1350px</Text>

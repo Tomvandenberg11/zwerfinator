@@ -44,7 +44,7 @@ const App = () => {
           <div className="container">
             <div className="text-wrapper">
                 <div>
-                  <Parallax x={[-143, 100]}>
+                  <Parallax x={[-140, 100]}>
                     <Title style={{color: '#00ACE7'}}>Dirk Groot</Title>
                   </Parallax>
                   <Subtitle>Zwerfinator</Subtitle>
@@ -252,6 +252,7 @@ const App = () => {
               <div className="invisible">
                 <Text>Het aantal opgeraapte blikjes per jaar verschilt soms enorm. Het neemt ook steeds toe. Wat slecht is... </Text>
                 <GRAPH4_2 width={'100%'}/>
+                <Text style={{marginTop: -50, fontWeight: 400, textAlign: 'center'}}>Maar het aantal opgeraapte blikjes per kilometer verschilt nauwelijks  </Text>
               </div>
             </div>
           </div>
